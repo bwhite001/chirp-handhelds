@@ -11,7 +11,7 @@ AREA = re.compile(r"Brisbane|Ipswi|Gold Coast|Logan|Redcliffe|Sunshine Coast|Mal
                   r"Bunya|Springfield|Gympie|Warwick|South Burnett")
 ROW = re.compile(r"\s*(\d+\.\d+)\s+(\d+\.\d+)\s+(VK4\w+)(.*?)\s([OTPXULW])\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)"
                  r"(?:\s+([\d,]+))?\s*$")
-LAST_MEMORY = 80
+LAST_MEMORY = 90
 # The Ipswich and District Radio Club's own analogue repeaters (https://ipswichradioclub.org.au/repeaters/, read
 # 28 Nov 2026). Each replaces any directory entry on the same output: (output, input, callsign, site, tone).
 CLUB = [
@@ -55,14 +55,22 @@ def main():
     if len(sys.argv) != 2:
         sys.exit("usage: wia.py REPEATER_DIRECTORY.pdf")
     found = repeaters(sys.argv[1])
-    if not 0 < len(found) <= LAST_MEMORY:
-        sys.exit(f"found {len(found)} repeaters; expected 1 to {LAST_MEMORY}")
+    if not found:
+        sys.exit("found no repeaters; nothing was changed")
     with open(CSV, newline="") as f:
         reader = csv.DictReader(f)
         fields, rows = reader.fieldnames, list(reader)
     template = next(row for row in rows if row["Group"] == "repeater")
+    # Your own channels keep the first memories, and a repeater they already cover is not listed twice.
+    mine = [row for row in rows if row["Group"] == "mine"]
+    covered = {(round(float(row["Frequency"]), 4), round(float(row["Frequency"]) +
+                {"+": 1, "-": -1}.get(row["Duplex"], 0) * float(row["Offset"]), 4)) for row in mine}
+    found = [r for r in found if (round(r[0], 4), round(r[1], 4)) not in covered]
+    first = max((int(row["Location"]) for row in mine), default=0) + 1
+    if first + len(found) - 1 > LAST_MEMORY:
+        sys.exit(f"repeaters would run past memory {LAST_MEMORY}; nothing was changed")
     new = []
-    for number, (output, uplink, call, where, tone) in enumerate(found, 1):
+    for number, (output, uplink, call, where, tone) in enumerate(found, first):
         shift = round(uplink - output, 4)
         new.append(dict(template, Location=number, Name=f"{call[3:]}{output:.3f}"[:10], Frequency=f"{output:.6f}",
                         Duplex="+" if shift > 0 else "-", Offset=f"{abs(shift):.6f}", Tone="Tone" if tone else "",
@@ -70,7 +78,7 @@ def main():
     with open(CSV, "w", newline="") as f:
         writer = csv.DictWriter(f, fields)
         writer.writeheader()
-        writer.writerows(new + [row for row in rows if row["Group"] != "repeater"])
+        writer.writerows(mine + new + [row for row in rows if row["Group"] not in ("mine", "repeater")])
     print(f"{len(new)} repeaters written, {sum(not r[4] for r in found)} with no tone listed")
 
 

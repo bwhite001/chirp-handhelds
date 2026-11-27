@@ -8,16 +8,17 @@ One analog channel list (`channels.csv`) for:
 | Baofeng UV-5R Mini | Baofeng, UV-5R Mini | 999 | 12 |
 | Baofeng UV-25 | Baofeng, UV-25 | 1000 | 12 |
 
-The list stays within 200 memories and 10-character names, the UV-K5's limits.
+The list stays within 200 memories, the UV-K5's limit. Names are 10 characters or fewer, except some of your own,
+which a UV-K5 shortens.
 
-**Not yet tried on a real radio.** The list is checked against CHIRP's drivers only.
+**Downloading works on a real UV-5R Mini. Uploading has not been tried on any radio.**
 
 ## What's in the list
 
 | Memories | Channels |
 |---|---|
-| 1-80 | South-east Queensland FM repeaters from the WIA directory (see below) |
-| 81, 82 | 146.500 and 439.000 simplex |
+| 1-18 | Your own channels (`mine`), as read from the UV-5R Mini on 28 Nov 2026; 14 (ISS) is receive only |
+| 19-90 | Other south-east Queensland FM repeaters from the WIA directory (see below) |
 | 91-100 | Marine VHF, receive only |
 | 101-180 | UHF CB 1-80 (memory = 100 + channel), receive only |
 | 181-188 | Central Highland Link Repeater System (off unless asked for) |
@@ -72,7 +73,7 @@ air since June 2024.
 
 ### The channel list
 
-`channels.csv` is the single list: CHIRP's CSV columns plus `Group` (`repeater`, `simplex`, `marine`, `cb`, `chlrs`). It also
+`channels.csv` is the single list: CHIRP's CSV columns plus `Group` (`mine`, `repeater`, `marine`, `cb`, `chlrs`). It also
 imports into the CHIRP application. `--csv` takes another file or a public `https://` URL.
 
 The script only touches the memory numbers in the list. Other memories and settings stay as they are.

@@ -31,7 +31,7 @@ RECEIVE_ONLY = {"marine", "cb"}
 
 
 def load_channels(source, marine="on", cb="on", chlrs="off"):
-    """Return (selected, left_out, source_features). Each entry is a CHIRP memory."""
+    """Return (selected, left_out, source_features, own_numbers). Each entry is a CHIRP memory."""
     if source.startswith("https://"):
         local = pathlib.Path(tempfile.mkdtemp()) / "channels.csv"
         with urllib.request.urlopen(source, timeout=30) as response:
@@ -54,7 +54,7 @@ def load_channels(source, marine="on", cb="on", chlrs="off"):
         (left_out if group in off else selected).append(mem)
     if len(groups) != len(selected) + len(left_out) or not selected:
         sys.exit(f"{source}: duplicate memory numbers, or nothing selected")
-    return selected, left_out, parsed.get_features()
+    return selected, left_out, parsed.get_features(), {number for number, group in groups.items() if group == "mine"}
 
 
 def radio_class(name):
@@ -66,8 +66,8 @@ def radio_class(name):
 
 
 def check(args):
-    selected, _left_out, _features = load_channels(args.csv, chlrs="on")  # every group
-    failures = []
+    selected, _left_out, _features, own = load_channels(args.csv, chlrs="on")  # every group
+    failures, shortened = [], []
     for name in ALIASES:
         radio = radio_class(name)(None)
         features = radio.get_features()
@@ -80,17 +80,21 @@ def check(args):
                 failures.append(f"{name} #{mem.number} {text}: {'; '.join(map(str, errors))}")
             elif not features.memory_bounds[0] <= mem.number <= features.memory_bounds[1]:
                 failures.append(f"{name} #{mem.number} {text}: past the radio's last memory")
+            elif mem.number in own and len(text) > features.valid_name_length:
+                shortened.append(f"{name} #{mem.number} {text} -> {radio.filter_name(text).rstrip()}")
             elif len(text) > features.valid_name_length or radio.filter_name(text).rstrip() != text:
                 failures.append(f"{name} #{mem.number} {text}: name would be shortened or altered")
             elif mem.duplex not in features.valid_duplexes:
                 failures.append(f"{name} #{mem.number} {text}: duplex {mem.duplex!r} not supported")
         print(f"{name}: {len(selected)} channels checked")
+    if shortened:
+        print("your names that this radio will shorten:", *shortened, sep="\n  ")
     print("\n".join(failures) or "all passed")
     return 1 if failures else 0
 
 
 def show(args):
-    selected, left_out, _features = load_channels(args.csv, args.marine, args.cb, args.chlrs)
+    selected, left_out, _features, _own = load_channels(args.csv, args.marine, args.cb, args.chlrs)
     for m in selected:
         shift = {"off": "RX only", "": "simplex"}.get(m.duplex, f"{m.duplex}{m.offset / 1e6:g}")
         tone = f"{m.rtone} Hz" if m.tmode == "Tone" else ""
@@ -105,7 +109,7 @@ def build_image(radio_name, base, out, args):
     wanted = (cls.VENDOR, cls.MODEL, cls.VARIANT)
     if (radio.VENDOR, radio.MODEL, radio.VARIANT) != wanted:
         sys.exit(f"{base} is a {radio.VENDOR} {radio.MODEL} image, not {radio_name}")
-    selected, left_out, source_features = load_channels(args.csv, args.marine, args.cb, args.chlrs)
+    selected, left_out, source_features, _own = load_channels(args.csv, args.marine, args.cb, args.chlrs)
     for mem in selected:
         radio.set_memory(import_logic.import_mem(radio, source_features, mem))
     # A slot is cleared only if it still holds the channel this list put there.

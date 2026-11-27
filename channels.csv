@@ -1,70 +1,74 @@
 Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,RxDtcsCode,CrossMode,Mode,TStep,Skip,Power,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE,Group
-1,RCC146.625,146.625000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCC Moorina Brisbane North,,,,,repeater
-2,RMC146.650,146.650000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC Mt Coot-tha Brisbane,,,,,repeater
-3,RET146.675,146.675000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RET Mt Kiangarow Darling Downs,,,,,repeater
-4,RGC146.700,146.700000,-,0.600000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGC Springbrook Gold Coast,,,,,repeater
-5,RCM146.725,146.725000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCM Mt Boulder Gympie Southern,,,,,repeater
-6,RKP146.725,146.725000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RKP Mt Crosby Ipswich,,,,,repeater
-7,RDD146.750,146.750000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDD O'Rourke's House Toowoomba,,,,,repeater
-8,RGN146.775,146.775000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGN Mt Kanigan Gympie Northern,,,,,repeater
-9,RCR146.825,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCR Braeside Warwick/Stanthorpe,,,,,repeater
-10,RSL146.825,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSL Noosa Heads Sunshine Coast North,,,,,repeater
-11,RSC146.850,146.850000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSC Wilkes Knob Sunshine Coast South,,,,,repeater
-12,RDB146.875,146.875000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDB Mt Cotton Brisbane South,,,,,repeater
-13,RAI146.900,146.900000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI The Knobby,,,,,repeater
-14,RRC146.925,146.925000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC Wamuran Redcliffe,,,,,repeater
-15,REG146.950,146.950000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4REG Mt Mowbullan Bunya Mtns,,,,,repeater
-16,RLW146.975,146.975000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLW O'Briens Mtn Logan/Bdesert,,,,,repeater
-17,RSN146.975,146.975000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSN Black Mtn Sunshine Coast North,,,,,repeater
-18,RBN147.000,147.000000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBN Mt Glorious Brisbane,,,,,repeater
-19,RME147.025,147.025000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RME Mt England South Burnett,,,,,repeater
-20,RNX147.050,147.050000,+,0.600000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RNX Wilkes Knob Sunshine Coast,,,,,repeater
-21,RTQ147.050,147.050000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RTQ Mt Kynoch Toowoomba,,,,,repeater
-22,RAX147.075,147.075000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAX Mt Cotton Brisbane South,,,,,repeater
-23,RAG147.150,147.150000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAG Black Mtn Brisbane WICEN,,,,,repeater
-24,RWM147.175,147.175000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM Raymonds Hill,,,,,repeater
-25,RBT147.200,147.200000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBT Wongawallan Gold Coast,,,,,repeater
-26,RGX147.225,147.225000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGX Springbrook Gold Coast,,,,,repeater
-27,RXZ147.275,147.275000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RXZ Bli Bli Sunshine Coast,,,,,repeater
-28,RVR147.375,147.375000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RVR The Knobby Ipswitch,,,,,repeater
-29,RLB147.625,147.625000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLB Woodridge Brisbane South,,,,,repeater
-30,RZD147.700,147.700000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZD Mt Perseverance Ipswich to T'mba Range,,,,,repeater
-31,RKC147.900,147.900000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RKC Ocean View Brisbane North,,,,,repeater
-32,RBA147.925,147.925000,-,0.600000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBA Rochedale Brisbane,,,,,repeater
-33,RBR147.950,147.950000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBR Mt Gravatt Brisbane,,,,,repeater
-34,RTQ438.025,438.025000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RTQ Mt Kynoch Toowoomba,,,,,repeater
-35,RZD438.050,438.050000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZD Mt Perseverance Ipswich to T'mba Range,,,,,repeater
-36,RSC438.075,438.075000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSC Wilkes Knob Sunshine Coast,,,,,repeater
-37,RZA438.100,438.100000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZA Springbrook Gold Coast,,,,,repeater
-38,RZC438.125,438.125000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZC Wilkes Knob Maleny,,,,,repeater
-39,RSL438.175,438.175000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSL Noosa Heads Sunshine Coast North,,,,,repeater
-40,RZB438.200,438.200000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZB Mt Coot-tha Brisbane,,,,,repeater
-41,RBR438.275,438.275000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBR Mt Gravatt Brisbane,,,,,repeater
-42,RRC438.325,438.325000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC Wamuran Redcliffe,,,,,repeater
-43,RWM438.375,438.375000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM Raymonds Hill,,,,,repeater
-44,RAI438.425,438.425000,-,5.000000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI The Knobby AllStar,,,,,repeater
-45,RDB438.450,438.450000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDB Mt Cotton Brisbane South,,,,,repeater
-46,RBO438.475,438.475000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBO Boonah,,,,,repeater
-47,RLW438.500,438.500000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLW O'Briens Mtn Logan/Bdesert,,,,,repeater
-48,RSS438.575,438.575000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSS Ocean View Brisbane North,,,,,repeater
-49,RAG438.625,438.625000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAG Black Mtn Brisbane WICEN,,,,,repeater
-50,REG438.650,438.650000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4REG Mt Mowbullan Bunya Mtns,,,,,repeater
-51,RET438.700,438.700000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RET Mt Kiangarow Darling Downs,,,,,repeater
-52,RLB438.750,438.750000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLB Woodridge Brisbane South,,,,,repeater
-53,RDD439.275,439.275000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDD O'Rourke's House Toowoomba,,,,,repeater
-54,RSM439.300,439.300000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSM Spring Mountain,,,,,repeater
-55,RAI439.325,439.325000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI The Knobby,,,,,repeater
-56,RTW439.775,439.775000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RTW O'Roukes House,,,,,repeater
-57,RBT439.825,439.825000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBT Wongawallan Gold Coast,,,,,repeater
-58,RPR439.850,439.850000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RPR Pohlmans Range,,,,,repeater
-59,RLU439.875,439.875000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLU Mt Dunsinane Logan,,,,,repeater
-60,RXZ439.900,439.900000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RXZ Bli Bli Sunshine Coast,,,,,repeater
-61,RWM439.925,439.925000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM Raymonds Hill,,,,,repeater
-62,RBA439.950,439.950000,-,5.000000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBA Rochedale Brisbane,,,,,repeater
-63,RGY439.950,439.950000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGY Gympie Gympie,,,,,repeater
-64,RMC439.975,439.975000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC Mt Coot-Tha Brisbane,,,,,repeater
-81,2M SIMPLEX,146.500000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,simplex
-82,70 SIMPLEX,439.000000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,simplex
+1,VK4RAI-2m,146.900000,-,0.600000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+2,SPX Call 2m,146.500000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+3,SPX Call 70c,439.000000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+4,VK4RSM-70cm,439.300000,-,5.000000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+5,VK4RWM-70cm,438.375000,-,5.000000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+6,VK4RPR-70cm,439.850000,-,5.000000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+7,VK4RBO-70cm,438.475000,-,7.000000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+8,VK4RTW-70cm,439.775000,-,7.000000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+9,VK4RAI-ECHOL,438.425000,-,5.000000,TSQL,88.5,123.0,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+10,VK4RAI-CHLR,439.325000,-,5.000000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+11,VK4RSC-SunCo,146.850000,-,0.600000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+12,VK4RBN-MtGlo,147.000000,-,0.600000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+13,VK4RDB-MtCot,146.875000,-,0.600000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+14,ISS Downlink,145.800000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,1.0W,,,,,,mine
+15,SSTV,145.100000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+16,WICEN-RPTR2m,147.125000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+17,WICEN-SPX,147.500000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+18,WICEN-RPTR70,439.925000,-,5.000000,TSQL,88.5,91.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,mine
+19,RCC146.625,146.625000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCC Moorina Brisbane North,,,,,repeater
+20,RMC146.650,146.650000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC Mt Coot-tha Brisbane,,,,,repeater
+21,RET146.675,146.675000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RET Mt Kiangarow Darling Downs,,,,,repeater
+22,RGC146.700,146.700000,-,0.600000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGC Springbrook Gold Coast,,,,,repeater
+23,RCM146.725,146.725000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCM Mt Boulder Gympie Southern,,,,,repeater
+24,RKP146.725,146.725000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RKP Mt Crosby Ipswich,,,,,repeater
+25,RDD146.750,146.750000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDD O'Rourke's House Toowoomba,,,,,repeater
+26,RGN146.775,146.775000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGN Mt Kanigan Gympie Northern,,,,,repeater
+27,RCR146.825,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCR Braeside Warwick/Stanthorpe,,,,,repeater
+28,RSL146.825,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSL Noosa Heads Sunshine Coast North,,,,,repeater
+29,RRC146.925,146.925000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC Wamuran Redcliffe,,,,,repeater
+30,REG146.950,146.950000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4REG Mt Mowbullan Bunya Mtns,,,,,repeater
+31,RLW146.975,146.975000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLW O'Briens Mtn Logan/Bdesert,,,,,repeater
+32,RSN146.975,146.975000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSN Black Mtn Sunshine Coast North,,,,,repeater
+33,RME147.025,147.025000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RME Mt England South Burnett,,,,,repeater
+34,RNX147.050,147.050000,+,0.600000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RNX Wilkes Knob Sunshine Coast,,,,,repeater
+35,RTQ147.050,147.050000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RTQ Mt Kynoch Toowoomba,,,,,repeater
+36,RAX147.075,147.075000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAX Mt Cotton Brisbane South,,,,,repeater
+37,RAG147.150,147.150000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAG Black Mtn Brisbane WICEN,,,,,repeater
+38,RWM147.175,147.175000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM Raymonds Hill,,,,,repeater
+39,RBT147.200,147.200000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBT Wongawallan Gold Coast,,,,,repeater
+40,RGX147.225,147.225000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGX Springbrook Gold Coast,,,,,repeater
+41,RXZ147.275,147.275000,+,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RXZ Bli Bli Sunshine Coast,,,,,repeater
+42,RVR147.375,147.375000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RVR The Knobby Ipswitch,,,,,repeater
+43,RLB147.625,147.625000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLB Woodridge Brisbane South,,,,,repeater
+44,RZD147.700,147.700000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZD Mt Perseverance Ipswich to T'mba Range,,,,,repeater
+45,RKC147.900,147.900000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RKC Ocean View Brisbane North,,,,,repeater
+46,RBA147.925,147.925000,-,0.600000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBA Rochedale Brisbane,,,,,repeater
+47,RBR147.950,147.950000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBR Mt Gravatt Brisbane,,,,,repeater
+48,RTQ438.025,438.025000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RTQ Mt Kynoch Toowoomba,,,,,repeater
+49,RZD438.050,438.050000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZD Mt Perseverance Ipswich to T'mba Range,,,,,repeater
+50,RSC438.075,438.075000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSC Wilkes Knob Sunshine Coast,,,,,repeater
+51,RZA438.100,438.100000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZA Springbrook Gold Coast,,,,,repeater
+52,RZC438.125,438.125000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZC Wilkes Knob Maleny,,,,,repeater
+53,RSL438.175,438.175000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSL Noosa Heads Sunshine Coast North,,,,,repeater
+54,RZB438.200,438.200000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZB Mt Coot-tha Brisbane,,,,,repeater
+55,RBR438.275,438.275000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBR Mt Gravatt Brisbane,,,,,repeater
+56,RRC438.325,438.325000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC Wamuran Redcliffe,,,,,repeater
+57,RDB438.450,438.450000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDB Mt Cotton Brisbane South,,,,,repeater
+58,RLW438.500,438.500000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLW O'Briens Mtn Logan/Bdesert,,,,,repeater
+59,RSS438.575,438.575000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSS Ocean View Brisbane North,,,,,repeater
+60,RAG438.625,438.625000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAG Black Mtn Brisbane WICEN,,,,,repeater
+61,REG438.650,438.650000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4REG Mt Mowbullan Bunya Mtns,,,,,repeater
+62,RET438.700,438.700000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RET Mt Kiangarow Darling Downs,,,,,repeater
+63,RLB438.750,438.750000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLB Woodridge Brisbane South,,,,,repeater
+64,RDD439.275,439.275000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDD O'Rourke's House Toowoomba,,,,,repeater
+65,RBT439.825,439.825000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBT Wongawallan Gold Coast,,,,,repeater
+66,RLU439.875,439.875000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLU Mt Dunsinane Logan,,,,,repeater
+67,RXZ439.900,439.900000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RXZ Bli Bli Sunshine Coast,,,,,repeater
+68,RBA439.950,439.950000,-,5.000000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBA Rochedale Brisbane,,,,,repeater
+69,RGY439.950,439.950000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGY Gympie Gympie,,,,,repeater
+70,RMC439.975,439.975000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC Mt Coot-Tha Brisbane,,,,,repeater
 91,M16 Call&D,156.800000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M16 Call&Distres",,,,,marine
 92,M06 S&R,156.300000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M06 S&R",,,,,marine
 93,M17 Inland,156.850000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M17 InlandWater",,,,,marine
