@@ -119,8 +119,15 @@ def build_image(radio_name, base, out, args):
     print(f"{out}: {len(selected)} channels written, {cleared} cleared; other memories and settings unchanged")
 
 
+class Port(serial.Serial):
+    """CHIRP drivers expect the port to take trace messages."""
+
+    def log(self, message):
+        logging.getLogger("radio.serial").debug(message)
+
+
 def open_radio(cls, port):
-    line = serial.Serial(baudrate=cls.BAUD_RATE, rtscts=cls.HARDWARE_FLOW, timeout=0.25)
+    line = Port(baudrate=cls.BAUD_RATE, rtscts=cls.HARDWARE_FLOW, timeout=0.25)
     line.dtr, line.rts = cls.WANTS_DTR, cls.WANTS_RTS
     line.port = port
     line.open()
