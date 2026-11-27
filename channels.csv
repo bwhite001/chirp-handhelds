@@ -1,126 +1,126 @@
-Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,RxDtcsCode,CrossMode,Mode,TStep,Skip,Power,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE
-1,RAI 2 Ipsw,146.900000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI 2 Ipswich,,,,
-2,RAI 70 I K,438.425000,-,5.000000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI 70 I Knob,,,,
-3,RSM 70 Sp,439.300000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSM 70 Sp Mt,,,,
-4,RAI 2 Link,147.375000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI 2 Link GC,,,,
-5,RWM 2 Raym,147.175000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM 2 Raymond,,,,
-6,RWM 70 Ray,438.375000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM 70 Raymon,,,,
-7,RBO 70 Boo,438.475000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBO 70 Boonah,,,,
-8,RPR 70 Som,439.850000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RPR 70 Somers,,,,
-9,RKP 2 Mt C,146.725000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RKP 2 Mt Cros,,,,
-10,RAX 2 Mt C,147.075000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAX 2 Mt Cotn,,,,
-11,RDB 2 Bays,146.875000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDB 2 Bayside,,,,
-12,RDB 70 b/s,438.450000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDB 70 b/side,,,,
-13,RMC 2 Bris,146.650000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC 2 Bris,,,,
-14,RMC 70 Bri,439.975000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC 70 Bris,,,,
-15,RBN 2 I Br,147.000000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBN 2 I Bris,,,,
-16,RZB 70 Bri,438.200000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZB 70 Bris,,,,
-17,RBA 2 Bris,147.925000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBA 2 Bris,,,,
-18,RLB 2 Bris,146.625000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLB 2 Bris,,,,
-19,RLW 2 Loga,146.975000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLW 2 Logan,,,,
-20,RRC 2 Redc,146.925000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC 2 Redclif,,,,
-21,RRC 70 Red,438.325000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC 70 Redcli,,,,
-22,RSC 2 Male,146.850000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSC 2 Maleny,,,,
-23,RSL 2 Noos,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSL 2 Noosa,,,,
-24,RCM 2 GymS,146.725000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCM 2 GymSth,,,,
-25,RDD 2 Toow,146.750000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDD 2 Toowba,,,,
-26,REG 2 Buny,146.950000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4REG 2 BunyaMt,,,,
-27,RCR 2 Wari,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCR 2 Warick,,,,
-28,RET 2 D/Do,146.675000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RET 2 D/Downs,,,,
-29,RED 2 Dalb,147.250000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RED 2 Dalby,,,,
-30,RZD 2 Mt P,147.100000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZD 2 Mt Perv,,,,
-31,RAT 2 Tve,146.700000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAT 2 Tve,,,,
-32,Spare 70,439.300000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,Spare 70,,,,
-33,Spare 2m,146.700000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,Spare 2m,,,,
-34,2M SIMPLEX,146.500000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,
-35,70 SIMPLEX,439.000000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,
-51,M16 Call&D,156.800000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M16 Call&Distres",,,,
-52,M06 S&R,156.300000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M06 S&R",,,,
-53,M17 Inland,156.850000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M17 InlandWater",,,,
-54,M21 Safety,157.050000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M21 Safety Duplx",,,,
-55,M71 Fishin,156.575000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M71 Fishing",,,,
-56,M72 All C&,156.625000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M72 All C&W",,,,
-57,M73 NonCom,156.675000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M73 NonCom C&W",,,,
-58,M75 S-S na,156.775000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M75 S-S nav",,,,
-59,M76 S-S na,156.825000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M76 S-S nav",,,,
-60,M77 nonCom,156.875000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M77 nonCom C&W",,,,
-101,CB01,476.425000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-102,CB02,476.450000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-103,CB03,476.475000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-104,CB04,476.500000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-105,CB05,476.525000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-106,CB06,476.550000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-107,CB07,476.575000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-108,CB08,476.600000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-109,CB09,476.625000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-110,CB10,476.650000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-111,CB11,476.675000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-112,CB12,476.700000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-113,CB13,476.725000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-114,CB14,476.750000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-115,CB15,476.775000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-116,CB16,476.800000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-117,CB17,476.825000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-118,CB18,476.850000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-119,CB19,476.875000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-120,CB20,476.900000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-121,CB21,476.925000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-122,CB22,476.950000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-123,CB23,476.975000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-124,CB24,477.000000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-125,CB25,477.025000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-126,CB26,477.050000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-127,CB27,477.075000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-128,CB28,477.100000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-129,CB29,477.125000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-130,CB30,477.150000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-131,CB31,477.175000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-132,CB32,477.200000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-133,CB33,477.225000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-134,CB34,477.250000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-135,CB35,477.275000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-136,CB36,477.300000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-137,CB37,477.325000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-138,CB38,477.350000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-139,CB39,477.375000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-140,CB40,477.400000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,
-141,CB41,476.437500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-142,CB42,476.462500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-143,CB43,476.487500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-144,CB44,476.512500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-145,CB45,476.537500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-146,CB46,476.562500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-147,CB47,476.587500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-148,CB48,476.612500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-149,CB49,476.637500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-150,CB50,476.662500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-151,CB51,476.687500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-152,CB52,476.712500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-153,CB53,476.737500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-154,CB54,476.762500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-155,CB55,476.787500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-156,CB56,476.812500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-157,CB57,476.837500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-158,CB58,476.862500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-159,CB59,476.887500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-160,CB60,476.912500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-161,CB61,476.937500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-162,CB62,476.962500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-163,CB63,476.987500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-164,CB64,477.012500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-165,CB65,477.037500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-166,CB66,477.062500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-167,CB67,477.087500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-168,CB68,477.112500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-169,CB69,477.137500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-170,CB70,477.162500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-171,CB71,477.187500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-172,CB72,477.212500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-173,CB73,477.237500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-174,CB74,477.262500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-175,CB75,477.287500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-176,CB76,477.312500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-177,CB77,477.337500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-178,CB78,477.362500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-179,CB79,477.387500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
-180,CB80,477.412500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,
+Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPolarity,RxDtcsCode,CrossMode,Mode,TStep,Skip,Power,Comment,URCALL,RPT1CALL,RPT2CALL,DVCODE,Group
+1,RAI 2 Ipsw,146.900000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI 2 Ipswich,,,,,repeater
+2,RAI 70 I K,438.425000,-,5.000000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI 70 I Knob,,,,,repeater
+3,RSM 70 Sp,439.300000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSM 70 Sp Mt,,,,,repeater
+4,RAI 2 Link,147.375000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAI 2 Link GC,,,,,repeater
+5,RWM 2 Raym,147.175000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM 2 Raymond,,,,,repeater
+6,RWM 70 Ray,438.375000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RWM 70 Raymon,,,,,repeater
+7,RBO 70 Boo,438.475000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBO 70 Boonah,,,,,repeater
+8,RPR 70 Som,439.850000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RPR 70 Somers,,,,,repeater
+9,RKP 2 Mt C,146.725000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RKP 2 Mt Cros,,,,,repeater
+10,RAX 2 Mt C,147.075000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAX 2 Mt Cotn,,,,,repeater
+11,RDB 2 Bays,146.875000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDB 2 Bayside,,,,,repeater
+12,RDB 70 b/s,438.450000,-,7.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDB 70 b/side,,,,,repeater
+13,RMC 2 Bris,146.650000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC 2 Bris,,,,,repeater
+14,RMC 70 Bri,439.975000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC 70 Bris,,,,,repeater
+15,RBN 2 I Br,147.000000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBN 2 I Bris,,,,,repeater
+16,RZB 70 Bri,438.200000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZB 70 Bris,,,,,repeater
+17,RBA 2 Bris,147.925000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBA 2 Bris,,,,,repeater
+18,RLB 2 Bris,146.625000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLB 2 Bris,,,,,repeater
+19,RLW 2 Loga,146.975000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RLW 2 Logan,,,,,repeater
+20,RRC 2 Redc,146.925000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC 2 Redclif,,,,,repeater
+21,RRC 70 Red,438.325000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRC 70 Redcli,,,,,repeater
+22,RSC 2 Male,146.850000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSC 2 Maleny,,,,,repeater
+23,RSL 2 Noos,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSL 2 Noosa,,,,,repeater
+24,RCM 2 GymS,146.725000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCM 2 GymSth,,,,,repeater
+25,RDD 2 Toow,146.750000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RDD 2 Toowba,,,,,repeater
+26,REG 2 Buny,146.950000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4REG 2 BunyaMt,,,,,repeater
+27,RCR 2 Wari,146.825000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RCR 2 Warick,,,,,repeater
+28,RET 2 D/Do,146.675000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RET 2 D/Downs,,,,,repeater
+29,RED 2 Dalb,147.250000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RED 2 Dalby,,,,,repeater
+30,RZD 2 Mt P,147.100000,+,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RZD 2 Mt Perv,,,,,repeater
+31,RAT 2 Tve,146.700000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RAT 2 Tve,,,,,repeater
+32,Spare 70,439.300000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,Spare 70,,,,,repeater
+33,Spare 2m,146.700000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,Spare 2m,,,,,repeater
+34,2M SIMPLEX,146.500000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,simplex
+35,70 SIMPLEX,439.000000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,,,,,,simplex
+51,M16 Call&D,156.800000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M16 Call&Distres",,,,,marine
+52,M06 S&R,156.300000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M06 S&R",,,,,marine
+53,M17 Inland,156.850000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M17 InlandWater",,,,,marine
+54,M21 Safety,157.050000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M21 Safety Duplx",,,,,marine
+55,M71 Fishin,156.575000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M71 Fishing",,,,,marine
+56,M72 All C&,156.625000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M72 All C&W",,,,,marine
+57,M73 NonCom,156.675000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M73 NonCom C&W",,,,,marine
+58,M75 S-S na,156.775000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M75 S-S nav",,,,,marine
+59,M76 S-S na,156.825000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M76 S-S nav",,,,,marine
+60,M77 nonCom,156.875000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M77 nonCom C&W",,,,,marine
+101,CB01,476.425000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+102,CB02,476.450000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+103,CB03,476.475000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+104,CB04,476.500000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+105,CB05,476.525000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+106,CB06,476.550000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+107,CB07,476.575000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+108,CB08,476.600000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+109,CB09,476.625000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+110,CB10,476.650000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+111,CB11,476.675000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+112,CB12,476.700000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+113,CB13,476.725000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+114,CB14,476.750000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+115,CB15,476.775000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+116,CB16,476.800000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+117,CB17,476.825000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+118,CB18,476.850000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+119,CB19,476.875000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+120,CB20,476.900000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+121,CB21,476.925000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+122,CB22,476.950000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+123,CB23,476.975000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+124,CB24,477.000000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+125,CB25,477.025000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+126,CB26,477.050000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+127,CB27,477.075000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+128,CB28,477.100000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+129,CB29,477.125000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+130,CB30,477.150000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+131,CB31,477.175000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+132,CB32,477.200000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+133,CB33,477.225000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+134,CB34,477.250000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+135,CB35,477.275000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+136,CB36,477.300000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+137,CB37,477.325000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+138,CB38,477.350000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+139,CB39,477.375000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+140,CB40,477.400000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,5.00,,4.0W,"UHF CB, receive only",,,,,cb
+141,CB41,476.437500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+142,CB42,476.462500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+143,CB43,476.487500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+144,CB44,476.512500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+145,CB45,476.537500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+146,CB46,476.562500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+147,CB47,476.587500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+148,CB48,476.612500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+149,CB49,476.637500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+150,CB50,476.662500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+151,CB51,476.687500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+152,CB52,476.712500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+153,CB53,476.737500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+154,CB54,476.762500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+155,CB55,476.787500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+156,CB56,476.812500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+157,CB57,476.837500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+158,CB58,476.862500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+159,CB59,476.887500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+160,CB60,476.912500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+161,CB61,476.937500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+162,CB62,476.962500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+163,CB63,476.987500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+164,CB64,477.012500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+165,CB65,477.037500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+166,CB66,477.062500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+167,CB67,477.087500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+168,CB68,477.112500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+169,CB69,477.137500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+170,CB70,477.162500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+171,CB71,477.187500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+172,CB72,477.212500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+173,CB73,477.237500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+174,CB74,477.262500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+175,CB75,477.287500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+176,CB76,477.312500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+177,CB77,477.337500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+178,CB78,477.362500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+179,CB79,477.387500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+180,CB80,477.412500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb

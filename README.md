@@ -21,9 +21,6 @@ The list stays within 200 memories and 10-character names, the UV-K5's limits.
 | 51-60 | Marine VHF, receive only |
 | 101-180 | UHF CB 1-80 (memory = 100 + channel), receive only |
 
-These radios must not transmit on marine or UHF CB. Those memories have transmit turned off (`Duplex = off`); leave it
-that way.
-
 ## Install CHIRP
 
 **Ubuntu**
@@ -38,24 +35,40 @@ launcher is shadowing the package: run `/usr/bin/chirp`, or delete `~/.local/bin
 
 **Windows:** install CHIRP-next from https://chirpmyradio.com, plus the driver for your cable (CH340 or Prolific).
 
-## Program a radio
+## Program a radio from the command line
 
-Use a two-pin (Kenwood style, "K-plug") programming cable. The USB socket on a battery or radio may only charge.
+`radio.py` uses CHIRP's drivers; the CHIRP application is never opened. Radio names: `k5`, `mini`, `uv25`, or any CHIRP
+radio id (for example `Quansheng_UV-K5_egzumer`).
 
-1. Radio off, push the cable fully in, then turn it on. A half-seated plug is the usual cause of "no response".
-2. In CHIRP: **Radio > Download from radio**. Pick the port (`/dev/ttyUSB0` or `COMx`), vendor and model.
-3. **File > Save** the download as `backups/<radio>-<date>.img` before changing anything. This is your way back.
-4. With that image open: **File > Import**, choose `channels.csv`.
-5. **Radio > Upload to radio**. Don't unplug until it finishes.
-6. Turn the radio off, unplug, turn it on and check a few channels.
-
-Backup from the command line:
+Use a two-pin (K-plug) programming cable. Radio off, push the plug fully in, then turn it on.
 
 ```bash
-/usr/bin/chirpc -r Baofeng_UV-5R_Mini -s /dev/ttyUSB0 --mmap backups/mini.img --download-mmap
+./radio.py ports                                  # find the cable
+./radio.py list --cb off                          # preview the channels
+./radio.py program -r mini -p /dev/ttyUSB0        # back up, build, ask, upload
 ```
 
-The radio ids are `Quansheng_UV-K5`, `Baofeng_UV-5R_Mini` and `Baofeng_UV-25`.
+`program` saves the radio's current contents to `backups/` first, and prints the command that puts it back.
+
+| Command | Does |
+|---|---|
+| `download -r R -p PORT -o file.img` | Read the radio |
+| `build -r R -i file.img -o new.img` | Put the channels into a copy of a download (no radio needed) |
+| `upload -r R -p PORT -i file.img` | Write an image to the radio |
+| `check` | Check the channels against all three radios |
+
+### Marine and UHF CB
+
+`--marine on|off` and `--cb on|off` (both default on) work with `list`, `check`, `build` and `program`. When on, these
+channels are **always receive only**, whatever the CSV says: these radios are not approved to transmit on either
+service. When off, they are removed from the radio if this list put them there.
+
+### The channel list
+
+`channels.csv` is the single list: CHIRP's CSV columns plus `Group` (`repeater`, `simplex`, `marine`, `cb`). It also
+imports into the CHIRP application. `--csv` takes another file or a public `https://` URL.
+
+The script only touches the memory numbers in the list. Other memories and settings stay as they are.
 
 ## Per-radio notes
 
@@ -67,13 +80,7 @@ The radio ids are `Quansheng_UV-K5`, `Baofeng_UV-5R_Mini` and `Baofeng_UV-25`.
 
 ## Changing channels
 
-Edit `channels.csv` (or open it in CHIRP), then:
-
-```bash
-python3 check.py
-```
-
-It fails if any channel would be rejected or changed by one of the three drivers, or could transmit outside
+Edit `channels.csv`, then run `./radio.py check`. Every command refuses a channel that could transmit outside
 144-148 MHz or 430-450 MHz.
 
 ## Before you transmit
