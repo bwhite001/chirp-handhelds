@@ -155,3 +155,11 @@ Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPola
 178,CB78,477.362500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
 179,CB79,477.387500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
 180,CB80,477.412500,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,NFM,12.50,,4.0W,"UHF CB, receive only",,,,,cb
+181,RMP146.800,146.800000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMP Midge Point (off air 6/24),,,,,chlrs
+182,RSP146.825,146.825000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSP Springsure,,,,,chlrs
+183,RHR146.925,146.925000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RHR Hodgson Range,,,,,chlrs
+184,RBD146.950,146.950000,-,0.600000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBD Blackdown,,,,,chlrs
+185,RRR146.975,146.975000,-,0.600000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RRR Mt Seaview,,,,,chlrs
+186,RHR438.500,438.500000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RHR Hodgson Range,,,,,chlrs
+187,RSA439.625,439.625000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RSA Sarina,,,,,chlrs
+188,RGL439.800,439.800000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGL Gladstone,,,,,chlrs

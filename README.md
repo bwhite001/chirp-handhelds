@@ -20,6 +20,7 @@ The list stays within 200 memories and 10-character names, the UV-K5's limits.
 | 81, 82 | 146.500 and 439.000 simplex |
 | 91-100 | Marine VHF, receive only |
 | 101-180 | UHF CB 1-80 (memory = 100 + channel), receive only |
+| 181-188 | Central Highland Link Repeater System (off unless asked for) |
 
 ## Install CHIRP
 
@@ -59,13 +60,19 @@ Use a two-pin (K-plug) programming cable. Radio off, push the plug fully in, the
 
 ### Marine and UHF CB
 
-`--marine on|off` and `--cb on|off` (both default on) work with `list`, `check`, `build` and `program`. When on, these
+`--marine on|off` and `--cb on|off` (both default on) work with `list`, `build` and `program`. When on, these
 channels are **always receive only**, whatever the CSV says: these radios are not approved to transmit on either
 service. When off, they are removed from the radio if this list put them there.
 
+### Central Highland Link Repeater System
+
+`--chlrs on` adds the eight link repeaters from the club's page; the default is `off`. Its 439.325 entry is already
+memory 55. Tones are the club's, plus the WIA directory's 91.5 Hz for Blackdown. The directory marks Midge Point off
+air since June 2024.
+
 ### The channel list
 
-`channels.csv` is the single list: CHIRP's CSV columns plus `Group` (`repeater`, `simplex`, `marine`, `cb`). It also
+`channels.csv` is the single list: CHIRP's CSV columns plus `Group` (`repeater`, `simplex`, `marine`, `cb`, `chlrs`). It also
 imports into the CHIRP application. `--csv` takes another file or a public `https://` URL.
 
 The script only touches the memory numbers in the list. Other memories and settings stay as they are.

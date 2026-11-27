@@ -30,7 +30,7 @@ HAM = [(144e6, 148e6), (430e6, 450e6)]
 RECEIVE_ONLY = {"marine", "cb"}
 
 
-def load_channels(source, marine="on", cb="on"):
+def load_channels(source, marine="on", cb="on", chlrs="off"):
     """Return (selected, left_out, source_features). Each entry is a CHIRP memory."""
     if source.startswith("https://"):
         local = pathlib.Path(tempfile.mkdtemp()) / "channels.csv"
@@ -40,7 +40,7 @@ def load_channels(source, marine="on", cb="on"):
     with open(source, newline="", encoding="utf-8-sig") as f:
         groups = {int(row["Location"]): row["Group"] for row in csv.DictReader(f)}
     parsed = generic_csv.CSVRadio(source)
-    off = {name for name, state in (("marine", marine), ("cb", cb)) if state == "off"}
+    off = {name for name, state in (("marine", marine), ("cb", cb), ("chlrs", chlrs)) if state == "off"}
     selected, left_out = [], []
     for number, group in sorted(groups.items()):
         mem = parsed.get_memory(number)
@@ -66,7 +66,7 @@ def radio_class(name):
 
 
 def check(args):
-    selected, _left_out, _features = load_channels(args.csv, args.marine, args.cb)
+    selected, _left_out, _features = load_channels(args.csv, chlrs="on")  # every group
     failures = []
     for name in ALIASES:
         radio = radio_class(name)(None)
@@ -90,7 +90,7 @@ def check(args):
 
 
 def show(args):
-    selected, left_out, _features = load_channels(args.csv, args.marine, args.cb)
+    selected, left_out, _features = load_channels(args.csv, args.marine, args.cb, args.chlrs)
     for m in selected:
         shift = {"off": "RX only", "": "simplex"}.get(m.duplex, f"{m.duplex}{m.offset / 1e6:g}")
         tone = f"{m.rtone} Hz" if m.tmode == "Tone" else ""
@@ -105,7 +105,7 @@ def build_image(radio_name, base, out, args):
     wanted = (cls.VENDOR, cls.MODEL, cls.VARIANT)
     if (radio.VENDOR, radio.MODEL, radio.VARIANT) != wanted:
         sys.exit(f"{base} is a {radio.VENDOR} {radio.MODEL} image, not {radio_name}")
-    selected, left_out, source_features = load_channels(args.csv, args.marine, args.cb)
+    selected, left_out, source_features = load_channels(args.csv, args.marine, args.cb, args.chlrs)
     for mem in selected:
         radio.set_memory(import_logic.import_mem(radio, source_features, mem))
     # A slot is cleared only if it still holds the channel this list put there.
@@ -180,6 +180,7 @@ def main():
     channels.add_argument("--csv", default=str(HERE / "channels.csv"), help="file or https:// URL")
     channels.add_argument("--marine", choices=["on", "off"], default="on", help="marine channels (receive only)")
     channels.add_argument("--cb", choices=["on", "off"], default="on", help="UHF CB channels (receive only)")
+    channels.add_argument("--chlrs", choices=["on", "off"], default="off", help="Central Highlands link repeaters")
     radio = argparse.ArgumentParser(add_help=False)
     radio.add_argument("-r", "--radio", required=True, help="k5, mini, uv25 or a CHIRP radio id")
     port = argparse.ArgumentParser(add_help=False)
