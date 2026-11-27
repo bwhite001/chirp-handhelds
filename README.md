@@ -16,9 +16,9 @@ The list stays within 200 memories and 10-character names, the UV-K5's limits.
 
 | Memories | Channels |
 |---|---|
-| 1-33 | South-east Queensland FM repeaters, with access tones |
-| 34, 35 | 146.500 and 439.000 simplex |
-| 51-60 | Marine VHF, receive only |
+| 1-80 | South-east Queensland FM repeaters from the WIA directory (see below) |
+| 81, 82 | 146.500 and 439.000 simplex |
+| 91-100 | Marine VHF, receive only |
 | 101-180 | UHF CB 1-80 (memory = 100 + channel), receive only |
 
 ## Install CHIRP
@@ -70,6 +70,18 @@ imports into the CHIRP application. `--csv` takes another file or a public `http
 
 The script only touches the memory numbers in the list. Other memories and settings stay as they are.
 
+## Updating the repeaters
+
+The repeater group comes from the [WIA Australian Repeater Directory](https://www.wia.org.au/members/repeaters/data/),
+currently the 25 September 2025 edition. It takes 2 m and 70 cm FM repeaters marked on air (`O` or `W`) around
+Brisbane, Ipswich, the Gold and Sunshine Coasts, Toowoomba and the Downs, Gympie, Warwick and the South Burnett.
+
+```bash
+./wia.py "Repeater Directory.pdf" && ./radio.py check     # needs pdftotext (poppler-utils)
+```
+
+A channel has a transmit tone only where the directory lists one. Hand edits to repeater rows are overwritten.
+
 ## Per-radio notes
 
 - **UV-K5:** CHIRP marks this driver experimental. Always keep the first download; it holds the radio's settings.
@@ -85,5 +97,5 @@ Edit `channels.csv`, then run `./radio.py check`. Every command refuses a channe
 
 ## Before you transmit
 
-Amateur channels need an amateur licence. Listen first. The repeater list and tones were copied from a DM-32UV codeplug
-on 28 Nov 2026, so confirm any repeater that doesn't respond.
+Amateur channels need an amateur licence. Listen first. Directory entries can be out of date, so
+confirm any repeater that doesn't respond.
