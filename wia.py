@@ -61,12 +61,12 @@ def main():
         reader = csv.DictReader(f)
         fields, rows = reader.fieldnames, list(reader)
     template = next(row for row in rows if row["Group"] == "repeater")
-    # Your own channels keep the first memories, and a repeater they already cover is not listed twice.
-    mine = [row for row in rows if row["Group"] == "mine"]
+    # The club core channels keep the first memories, and a repeater they already cover is not listed twice.
+    core = [row for row in rows if row["Group"] == "core"]
     covered = {(round(float(row["Frequency"]), 4), round(float(row["Frequency"]) +
-                {"+": 1, "-": -1}.get(row["Duplex"], 0) * float(row["Offset"]), 4)) for row in mine}
+                {"+": 1, "-": -1}.get(row["Duplex"], 0) * float(row["Offset"]), 4)) for row in core}
     found = [r for r in found if (round(r[0], 4), round(r[1], 4)) not in covered]
-    first = max((int(row["Location"]) for row in mine), default=0) + 1
+    first = max((int(row["Location"]) for row in core), default=0) + 1
     if first + len(found) - 1 > LAST_MEMORY:
         sys.exit(f"repeaters would run past memory {LAST_MEMORY}; nothing was changed")
     new = []
@@ -78,7 +78,7 @@ def main():
     with open(CSV, "w", newline="") as f:
         writer = csv.DictWriter(f, fields)
         writer.writeheader()
-        writer.writerows(mine + new + [row for row in rows if row["Group"] not in ("mine", "repeater")])
+        writer.writerows(core + new + [row for row in rows if row["Group"] not in ("core", "repeater")])
     print(f"{len(new)} repeaters written, {sum(not r[4] for r in found)} with no tone listed")
 
 

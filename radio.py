@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Program handhelds from channels.csv using CHIRP's drivers, without the CHIRP application."""
+"""Program handhelds from the club's channels.csv using CHIRP's drivers, without the CHIRP application."""
 import argparse
 import builtins
 import csv
@@ -31,7 +31,7 @@ RECEIVE_ONLY = {"marine", "cb"}
 
 
 def load_channels(source, marine="on", cb="on", chlrs="off"):
-    """Return (selected, left_out, source_features, own_numbers). Each entry is a CHIRP memory."""
+    """Return (selected, left_out, source_features, core_numbers). Each entry is a CHIRP memory."""
     if source.startswith("https://"):
         local = pathlib.Path(tempfile.mkdtemp()) / "channels.csv"
         with urllib.request.urlopen(source, timeout=30) as response:
@@ -54,7 +54,7 @@ def load_channels(source, marine="on", cb="on", chlrs="off"):
         (left_out if group in off else selected).append(mem)
     if len(groups) != len(selected) + len(left_out) or not selected:
         sys.exit(f"{source}: duplicate memory numbers, or nothing selected")
-    return selected, left_out, parsed.get_features(), {number for number, group in groups.items() if group == "mine"}
+    return selected, left_out, parsed.get_features(), {number for number, group in groups.items() if group == "core"}
 
 
 def radio_class(name):
@@ -66,7 +66,7 @@ def radio_class(name):
 
 
 def check(args):
-    selected, _left_out, _features, own = load_channels(args.csv, chlrs="on")  # every group
+    selected, _left_out, _features, core = load_channels(args.csv, chlrs="on")  # every group
     failures, shortened = [], []
     for name in ALIASES:
         radio = radio_class(name)(None)
@@ -80,7 +80,7 @@ def check(args):
                 failures.append(f"{name} #{mem.number} {text}: {'; '.join(map(str, errors))}")
             elif not features.memory_bounds[0] <= mem.number <= features.memory_bounds[1]:
                 failures.append(f"{name} #{mem.number} {text}: past the radio's last memory")
-            elif mem.number in own and len(text) > features.valid_name_length:
+            elif mem.number in core and len(text) > features.valid_name_length:
                 shortened.append(f"{name} #{mem.number} {text} -> {radio.filter_name(text).rstrip()}")
             elif len(text) > features.valid_name_length or radio.filter_name(text).rstrip() != text:
                 failures.append(f"{name} #{mem.number} {text}: name would be shortened or altered")
@@ -88,7 +88,7 @@ def check(args):
                 failures.append(f"{name} #{mem.number} {text}: duplex {mem.duplex!r} not supported")
         print(f"{name}: {len(selected)} channels checked")
     if shortened:
-        print("your names that this radio will shorten:", *shortened, sep="\n  ")
+        print("core names that this radio will shorten:", *shortened, sep="\n  ")
     print("\n".join(failures) or "all passed")
     return 1 if failures else 0
 
