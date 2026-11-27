@@ -9,8 +9,8 @@ A ready-made analog channel list for members of the Ipswich and District Radio C
 | Baofeng UV-5R Mini | Baofeng, UV-5R Mini | 999 | 12 |
 | Baofeng UV-25 | Baofeng, UV-25 | 1000 | 12 |
 
-**How far it has been tested:** on a real UV-5R Mini, the command line tool has read, written and read back the list
-with an exact match. Loading it through the CHIRP application has not been tried, and nor has a UV-K5 or UV-25. Save your radio's contents first (step 2 below) so you can put them back.
+**How far it has been tested:** on a real UV-5R Mini and a real UV-25, the command line tool has read, written and
+read back the list with an exact match. Loading it through the CHIRP application has not been tried, and nor has a UV-K5. Save your radio's contents first (step 2 below) so you can put them back.
 
 ## What's in the list
 
