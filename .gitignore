@@ -1,0 +1,4 @@
+# Radio downloads hold per-unit settings and calibration
+backups/
+*.img
+__pycache__/
