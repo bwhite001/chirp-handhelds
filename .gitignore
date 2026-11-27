@@ -2,3 +2,5 @@
 backups/
 *.img
 __pycache__/
+# Third-party CHIRP driver modules (see README)
+modules/

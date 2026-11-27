@@ -31,6 +31,8 @@ A UV-K5 shortens the longer names; `WICEN-RPTR2m` and `WICEN-RPTR70` both show a
 
 You need a two-pin (Kenwood style, "K-plug") programming cable. The USB socket on a battery or radio may only charge.
 
+These steps are not for F4HWN firmware (see below).
+
 1. Install CHIRP from https://chirpmyradio.com. Windows may also need the driver for your cable (CH340 or Prolific).
 2. Radio off, push the plug fully in, turn it on. In CHIRP: **Radio > Download from radio**, choose the port, vendor and
    model. Then **File > Save** and keep that file: it is your way back.
@@ -74,11 +76,32 @@ Options for `list`, `build` and `program`:
 Only the memory numbers in the list are touched. Turning a group off removes it from the radio if this list put it
 there.
 
+## UV-K5 V3 / UV-K1 with F4HWN firmware
+
+**Do not load `channels.csv` into this radio with the CHIRP application.** F4HWN has no receive-only channel, so marine
+and UHF CB come out able to transmit.
+
+Use the command line tool, which blocks transmit properly or saves nothing. It needs F4HWN's own driver module matching
+your firmware version. For v5.9.0 that is
+[`f4hwn.fusion.chirp.v5.9.0.py`](https://github.com/armel/uv-k1-k5v3-firmware-custom/releases/tag/v5.9.0)
+(SHA-256 `09d23891a6dc44478cb3e8fd16e1f00fdf33673b4e2faffae765ad812b3a0ff2`); put it in `modules/`.
+
+```bash
+./radio.py --module modules/f4hwn.fusion.chirp.v5.9.0.py program -r module -p /dev/ttyUSB0 --f-lock-ca
+```
+
+- `--f-lock-ca` sets the radio's **F Lock to CA HAM (144-148, 430-450)**. The firmware transmits on a channel unless
+  both F Lock disallows the frequency and the channel's TX Lock is on. The tool turns TX Lock on for every channel it
+  writes. Don't change F Lock or turn TX Lock off afterwards.
+- Without it you can only load with `--marine off --cb off`.
+- Memory 14 (ISS) is left out: its frequency is inside the 2 m band, so receive only can't be enforced.
+
 ## Which radio to pick
 
 - **UV-K5:** CHIRP marks this driver experimental.
   - Custom firmware needs a different choice: for EGZUMER builds pick the `egzumer` variant.
-  - Newer hardware sold as UV-K5(8) or V3 with 7.03 firmware may need **Quansheng UV-K1** instead (not checked).
+  - Newer hardware sold as UV-K5(8) or V3 with stock 7.03 firmware may need **Quansheng UV-K1** instead (not checked).
+  - F4HWN firmware v5 or later: see the section above.
 - **UV-5R Mini:** it is a different radio from the UV-5R. Don't pick "UV-5R".
 - **UV-25:** check the label. Similar names (UV-25 Plus and others) may not match this driver.
 

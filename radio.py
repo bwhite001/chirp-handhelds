@@ -4,10 +4,12 @@ import argparse
 import builtins
 import csv
 import datetime
+import importlib.util
 import logging
 import pathlib
 import sys
 import tempfile
+import types
 import urllib.request
 import warnings
 
@@ -26,8 +28,33 @@ except ImportError as e:
 
 HERE = pathlib.Path(__file__).resolve().parent
 ALIASES = {"k5": "Quansheng_UV-K5", "mini": "Baofeng_UV-5R_Mini", "uv25": "Baofeng_UV-25"}
+ALIASES_FROM_MODULE = {}
 HAM = [(144e6, 148e6), (430e6, 450e6)]
 RECEIVE_ONLY = {"marine", "cb"}
+# F4HWN radios have no receive-only channel. Transmit is blocked only when the radio's F Lock disallows the frequency
+# AND the channel's TX Lock is on. These F Lock values (FCC, CA, CE, GB) allow nothing outside the amateur bands.
+HAM_F_LOCKS = {1, 2, 3, 4}
+F_LOCK_CA = 2
+
+
+def load_module(path):
+    """Load a CHIRP driver module, as CHIRP's "Load Module" does. It runs the file's code: only use one you trust."""
+    try:
+        import wx  # noqa: F401
+    except ImportError:
+        # Modules written for the application import wx for pop-up questions; answer every one with "cancel".
+        sys.modules["wx"] = types.SimpleNamespace(OK=1, CANCEL=2, CANCEL_DEFAULT=0, ICON_WARNING=0,
+                                                  MessageBox=lambda *a, **k: 2)
+    directory.import_drivers()
+    spec = importlib.util.spec_from_file_location("chirp_extra_driver", path)
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    before = set(directory.DRV_TO_RADIO)
+    spec.loader.exec_module(module)
+    added = sorted(set(directory.DRV_TO_RADIO) - before)
+    if not added:
+        sys.exit(f"{path} did not register a radio driver")
+    ALIASES_FROM_MODULE["module"] = added[0]
 
 
 def load_channels(source, marine="on", cb="on", chlrs="off"):
@@ -60,7 +87,7 @@ def load_channels(source, marine="on", cb="on", chlrs="off"):
 def radio_class(name):
     directory.import_drivers()
     try:
-        return directory.get_radio(ALIASES.get(name, name))
+        return directory.get_radio({**ALIASES, **ALIASES_FROM_MODULE}.get(name, name))
     except Exception:
         sys.exit(f"unknown radio {name!r}: use {', '.join(ALIASES)} or a CHIRP radio id")
 
@@ -102,6 +129,38 @@ def show(args):
     print(f"{len(selected)} channels, {len(left_out)} left out")
 
 
+def in_ham_band(hz):
+    return any(lo <= hz <= hi for lo, hi in HAM)
+
+
+def lock_channels(radio, selected, source_features, set_f_lock_ca):
+    """Write channels to a radio without receive-only support. Returns the channels that could not be made safe."""
+    memobj = radio._memobj
+    if not hasattr(memobj, "int_flock"):
+        sys.exit("this radio can't make a channel receive only; nothing was saved. Use --marine off --cb off")
+    if set_f_lock_ca:
+        memobj.int_flock = F_LOCK_CA
+        print("F Lock set to CA HAM (144-148, 430-450) for the whole radio")
+    restricted = int(memobj.int_flock) in HAM_F_LOCKS
+    if not restricted and any(m.duplex == "off" and not in_ham_band(m.freq) for m in selected):
+        sys.exit("nothing saved: this radio's F Lock allows transmit outside the amateur bands, so marine and CB can't "
+                 "be receive only.\nAdd --f-lock-ca to change F Lock, or --marine off --cb off to leave them out")
+    unsafe = []
+    for mem in selected:
+        # Inside an amateur band F Lock always allows transmit, so a receive-only channel there cannot be enforced.
+        if mem.duplex == "off" and in_ham_band(mem.freq):
+            unsafe.append(mem)
+            radio.erase_memory(mem.number)
+            continue
+        radio.set_memory(import_logic.import_mem(radio, source_features, mem))
+        written = radio.get_memory(mem.number)
+        written.extra["txLock"].value = "ON"
+        radio.set_memory(written)
+        if str(radio.get_memory(mem.number).extra["txLock"].value) != "ON":
+            sys.exit(f"nothing saved: TX Lock did not stick on memory {mem.number}")
+    return unsafe
+
+
 def build_image(radio_name, base, out, args):
     """Write the selected channels into a copy of a downloaded image."""
     cls = radio_class(radio_name)
@@ -110,8 +169,14 @@ def build_image(radio_name, base, out, args):
     if (radio.VENDOR, radio.MODEL, radio.VARIANT) != wanted:
         sys.exit(f"{base} is a {radio.VENDOR} {radio.MODEL} image, not {radio_name}")
     selected, left_out, source_features, _own = load_channels(args.csv, args.marine, args.cb, args.chlrs)
-    for mem in selected:
-        radio.set_memory(import_logic.import_mem(radio, source_features, mem))
+    unsafe = []
+    if "off" in radio.get_features().valid_duplexes:
+        for mem in selected:
+            radio.set_memory(import_logic.import_mem(radio, source_features, mem))
+            if mem.duplex == "off" and radio.get_memory(mem.number).duplex != "off":
+                sys.exit(f"nothing saved: memory {mem.number} {mem.name} did not stay receive only")
+    else:
+        unsafe = lock_channels(radio, selected, source_features, args.f_lock_ca)
     # A slot is cleared only if it still holds the channel this list put there.
     cleared = 0
     for mem in left_out:
@@ -120,7 +185,10 @@ def build_image(radio_name, base, out, args):
             radio.erase_memory(mem.number)
             cleared += 1
     radio.save_mmap(str(out))
-    print(f"{out}: {len(selected)} channels written, {cleared} cleared; other memories and settings unchanged")
+    for mem in unsafe:
+        print(f"left out #{mem.number} {mem.name}: receive only inside an amateur band can't be enforced on this radio")
+    print(f"{out}: {len(selected) - len(unsafe)} channels written, {cleared} cleared; other memories "
+          f"{'and settings other than F Lock ' if getattr(args, 'f_lock_ca', False) else 'and settings '}unchanged")
 
 
 class Port(serial.Serial):
@@ -181,17 +249,21 @@ def program(args):
     download_image(args.radio, args.port, backup)
     build_image(args.radio, backup, new, args)
     upload_image(args.radio, args.port, new, args.yes)
-    print(f"to undo: radio.py upload -r {args.radio} -p {args.port} -i {backup}")
+    module = f"--module {args.module} " if args.module else ""
+    print(f"to undo: radio.py {module}upload -r {args.radio} -p {args.port} -i {backup}")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--module", help="extra CHIRP driver .py file; its radio is then -r module")
     commands = parser.add_subparsers(dest="command", required=True)
     channels = argparse.ArgumentParser(add_help=False)
     channels.add_argument("--csv", default=str(HERE / "channels.csv"), help="file or https:// URL")
     channels.add_argument("--marine", choices=["on", "off"], default="on", help="marine channels (receive only)")
     channels.add_argument("--cb", choices=["on", "off"], default="on", help="UHF CB channels (receive only)")
     channels.add_argument("--chlrs", choices=["on", "off"], default="off", help="Central Highlands link repeaters")
+    channels.add_argument("--f-lock-ca", action="store_true",
+                          help="F4HWN only: set the radio's F Lock to CA HAM (144-148, 430-450)")
     radio = argparse.ArgumentParser(add_help=False)
     radio.add_argument("-r", "--radio", required=True, help="k5, mini, uv25 or a CHIRP radio id")
     port = argparse.ArgumentParser(add_help=False)
@@ -219,6 +291,8 @@ def main():
     add("program", program, [radio, port, channels, yes], "back up, build and upload in one step")
 
     args = parser.parse_args()
+    if args.module:
+        load_module(args.module)
     return args.run(args) or 0
 
 
