@@ -11,7 +11,7 @@ AREA = re.compile(r"Brisbane|Ipswi|Gold Coast|Logan|Redcliffe|Sunshine Coast|Mal
                   r"Bunya|Springfield|Gympie|Warwick|South Burnett")
 ROW = re.compile(r"\s*(\d+\.\d+)\s+(\d+\.\d+)\s+(VK4\w+)(.*?)\s([OTPXULW])\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)"
                  r"(?:\s+([\d,]+))?\s*$")
-LAST_MEMORY = 90
+LAST_MEMORY = 80
 # The Ipswich and District Radio Club's own analogue repeaters (https://ipswichradioclub.org.au/repeaters/, read
 # 28 Nov 2026). Each replaces any directory entry on the same output: (output, input, callsign, site, tone).
 CLUB = [

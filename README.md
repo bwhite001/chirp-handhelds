@@ -18,6 +18,7 @@ with an exact match. Loading it through the CHIRP application has not been tried
 |---|---|
 | 1-18 | Club core channels: local repeaters, simplex calling, SSTV, ISS (receive only), WICEN |
 | 19-70 | Other south-east Queensland FM repeaters |
+| 81-84 | WICEN simplex: base 438.975, check points 439.250, 439.175, 439.025 |
 | 91-100 | Marine VHF, receive only |
 | 101-180 | UHF CB 1-80 (memory = 100 + channel), receive only |
 | 181-188 | Central Highland Link Repeater System |
@@ -95,7 +96,7 @@ Details go out of date. If a repeater doesn't respond, check it, and please repo
 
 ## Maintaining the list
 
-`channels.csv` is CHIRP's CSV format plus the `Group` column (`core`, `repeater`, `marine`, `cb`, `chlrs`). After
+`channels.csv` is CHIRP's CSV format plus the `Group` column (`core`, `repeater`, `wicen`, `marine`, `cb`, `chlrs`). After
 editing it, run `./radio.py check`. Every command refuses a channel that could transmit outside 144-148 MHz or
 430-450 MHz.
 

@@ -69,6 +69,10 @@ Location,Name,Frequency,Duplex,Offset,Tone,rToneFreq,cToneFreq,DtcsCode,DtcsPola
 68,RBA439.950,439.950000,-,5.000000,Tone,123.0,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RBA Rochedale Brisbane,,,,,repeater
 69,RGY439.950,439.950000,-,5.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RGY Gympie Gympie,,,,,repeater
 70,RMC439.975,439.975000,-,5.000000,Tone,91.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,VK4RMC Mt Coot-Tha Brisbane,,,,,repeater
+81,WICEN Base,438.975000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,WICEN simplex,,,,,wicen
+82,WICEN CP 1,439.250000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,WICEN simplex,,,,,wicen
+83,WICEN CP 2,439.175000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,WICEN simplex,,,,,wicen
+84,WICEN CP 3,439.025000,,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,WICEN simplex,,,,,wicen
 91,M16 Call&D,156.800000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M16 Call&Distres",,,,,marine
 92,M06 S&R,156.300000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M06 S&R",,,,,marine
 93,M17 Inland,156.850000,off,0.000000,,88.5,88.5,023,NN,023,Tone->Tone,FM,5.00,,4.0W,"Marine, receive only: M17 InlandWater",,,,,marine
