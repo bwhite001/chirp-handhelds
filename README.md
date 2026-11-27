@@ -80,6 +80,10 @@ Brisbane, Ipswich, the Gold and Sunshine Coasts, Toowoomba and the Downs, Gympie
 ./wia.py "Repeater Directory.pdf" && ./radio.py check     # needs pdftotext (poppler-utils)
 ```
 
+The Ipswich club's own repeaters come from
+[its repeater page](https://ipswichradioclub.org.au/repeaters/) (read 28 Nov 2026), which wins over the directory; they
+are the `CLUB` list in `wia.py`.
+
 A channel has a transmit tone only where the directory lists one. Hand edits to repeater rows are overwritten.
 
 ## Per-radio notes

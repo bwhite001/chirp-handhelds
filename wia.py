@@ -12,6 +12,20 @@ AREA = re.compile(r"Brisbane|Ipswi|Gold Coast|Logan|Redcliffe|Sunshine Coast|Mal
 ROW = re.compile(r"\s*(\d+\.\d+)\s+(\d+\.\d+)\s+(VK4\w+)(.*?)\s([OTPXULW])\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\S+)"
                  r"(?:\s+([\d,]+))?\s*$")
 LAST_MEMORY = 80
+# The Ipswich and District Radio Club's own analogue repeaters (https://ipswichradioclub.org.au/repeaters/, read
+# 28 Nov 2026). Each replaces any directory entry on the same output: (output, input, callsign, site, tone).
+CLUB = [
+    (146.900, 146.300, "VK4RAI", "The Knobby", 91.5),
+    (147.175, 147.775, "VK4RWM", "Raymonds Hill", None),
+    (438.375, 433.375, "VK4RWM", "Raymonds Hill", 91.5),
+    (438.425, 433.425, "VK4RAI", "The Knobby AllStar", 123.0),
+    (438.475, 431.475, "VK4RBO", "Boonah", 91.5),
+    (439.300, 434.300, "VK4RSM", "Spring Mountain", 91.5),
+    (439.325, 434.325, "VK4RAI", "The Knobby", 91.5),
+    (439.775, 432.775, "VK4RTW", "O'Roukes House", 91.5),
+    (439.850, 434.850, "VK4RPR", "Pohlmans Range", 91.5),
+    (439.925, 434.925, "VK4RWM", "Raymonds Hill", 91.5),
+]
 
 
 def repeaters(pdf):
@@ -33,7 +47,8 @@ def repeaters(pdf):
             where = " ".join(where.split())
             if status in "OW" and output != uplink and AREA.search(where):
                 found.append((float(output), float(uplink), call, where, None if tone == "-" else float(tone)))
-    return sorted(found)
+    overridden = {row[0] for row in CLUB}
+    return sorted([row for row in found if row[0] not in overridden] + CLUB)
 
 
 def main():
